@@ -1,0 +1,21 @@
+use homeworks
+switched to db homeworks
+db.createCollection('users') 
+{ ok: 1 }
+show collections
+users
+db.users.find()
+db.users.insertMany([
+  {firstname: 'Anatoliy', lastname: 'Ushanov', age: 28, gender: 'm'},
+  {firstname: 'Svetlana', lastname: 'Demidova',age: 25, gender: 'f'},
+  {firstname: 'Nikita', lastname: 'Ivanov', age: 33, gender: 'm'},
+  {firstname: 'Olga', lastname: 'Petrova', age: 22, gender: 'f'}
+])
+
+
+db.vegetables.insertMany([
+  {_id: 1, title: 'Potato', price: 370, count: 5, country: 'Germany'},
+  {_id: 2, title: 'Onion', price: 320, count: 3, country: 'Poland'},
+  {_id: 3, title: 'Tomato', price: 210, count: 9, counrty: 'Spain'},
+  {_id: 4, title: 'Carrot', price: 280, count: 4, country: 'France'}
+])
